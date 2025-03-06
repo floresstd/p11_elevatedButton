@@ -41,15 +41,13 @@ class MyApp extends StatelessWidget {
               CustomButton(
                   text: "Button 4",
                   color: Colors.purple,
-                  textColor: Colors.white,
-                  icon: Icons.thumb_up),
+                  textColor: Colors.white),
               SizedBox(height: 15),
               CustomButton(
                   text: "Button 5",
                   color: Colors.blueAccent,
                   textColor: Colors.white,
-                  borderColor: Colors.blue,
-                  icon: Icons.arrow_forward),
+                  borderColor: Colors.blue),
               SizedBox(height: 15),
               Row(
                 mainAxisAlignment: MainAxisAlignment.center,
@@ -105,7 +103,7 @@ class CustomButton extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Container(
-      width: 180, // Se redujo el ancho del botón
+      width: 180,
       padding: EdgeInsets.symmetric(vertical: 12, horizontal: 20),
       decoration: BoxDecoration(
         color: color,

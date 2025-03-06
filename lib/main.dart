@@ -11,7 +11,13 @@ class MyApp extends StatelessWidget {
       debugShowCheckedModeBanner: false,
       home: Scaffold(
         appBar: AppBar(
-          title: Center(child: Text("Jesús Daniel Flores Rodríguez")),
+          title: Column(
+            mainAxisAlignment: MainAxisAlignment.center,
+            children: [
+              Text("Jesús Daniel Flores Rodríguez"),
+              Text("22308051281186", style: TextStyle(fontSize: 20)),
+            ],
+          ),
           backgroundColor: Color(0xffff4444),
         ),
         backgroundColor: Colors.white,
